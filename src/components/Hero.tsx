@@ -28,10 +28,20 @@ const Hero = () => {
             <p className="text-secondary text-lg md:text-xl font-semibold mb-4">
               {t('hero.welcome')}
             </p>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            
+            {/* Logo above subtitle */}
+            <div className="flex justify-center mb-8">
+              <img
+                src="/logoAJFAN.png"
+                alt="AJFAN PIZZA"
+                className="w-48 md:w-64 lg:w-80 h-auto object-contain"
+              />
+            </div>
+
+            {/* <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="text-gradient">{t('hero.title')}</span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg">
+            </h1> */}
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg mx-auto text-center">
               {t('hero.subtitle')}
             </p>
             <div className="space-y-6">
