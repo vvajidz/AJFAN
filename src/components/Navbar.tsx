@@ -20,8 +20,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border shadow-sm">
-      <div className="container mx-auto px-4">
+    <nav className="fixed top-0 left-0 right-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border shadow-sm overflow-hidden">
+      <div className="max-w-screen-xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <img 
@@ -92,7 +92,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden py-4 space-y-4">
+          <div className="md:hidden py-4 space-y-4 px-4">
             <button
               onClick={() => scrollToSection('home')}
               className="block w-full text-left px-4 py-2 text-foreground hover:text-primary hover:bg-muted rounded-lg transition-colors font-medium"

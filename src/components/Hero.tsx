@@ -13,7 +13,7 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center pt-20">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-background -z-10" />
       
-      <div className="container mx-auto px-4 py-16">
+  <div className="max-w-screen-xl mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div data-aos="fade-right" data-aos-duration="1000">
@@ -37,10 +37,6 @@ const Hero = () => {
                 className="w-48 md:w-64 lg:w-80 h-auto object-contain"
               />
             </div>
-
-            {/* <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="text-gradient">{t('hero.title')}</span>
-            </h1> */}
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg mx-auto text-center">
               {t('hero.subtitle')}
             </p>
