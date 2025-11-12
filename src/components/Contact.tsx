@@ -44,9 +44,10 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          {/* Main page heading for SEO/accessibility */}
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
             {t('contact.title')}
-          </h2>
+          </h1>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
@@ -103,6 +104,12 @@ const Contact = () => {
                 </a>
               );
             })}
+          </div>
+          {/* Internal links to other site pages to help crawlers and users */}
+          <div className="mt-6 flex justify-center gap-4">
+            <a href="/about" className="text-primary hover:underline">{t('nav.about') || 'About'}</a>
+            <a href="/who-we-are" className="text-primary hover:underline">Who We Are</a>
+            <a href="/#menu" className="text-primary hover:underline">{t('nav.menu') || 'Menu'}</a>
           </div>
         </div>
       </div>
