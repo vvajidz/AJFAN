@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Index from "./pages/Index";
@@ -65,8 +65,8 @@ const App = () => (
         <Toaster />
         <Sonner />
 
-        {/* App Routes */}
-        <BrowserRouter>
+        {/* App Routes (using hash routing so deep links work on static hosts) */}
+        <Router>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<AboutPage />} />
@@ -75,7 +75,7 @@ const App = () => (
             {/* ADD CUSTOM ROUTES ABOVE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </BrowserRouter>
+        </Router>
       </TooltipProvider>
     </QueryClientProvider>
   </HelmetProvider>

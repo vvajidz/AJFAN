@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Menu, X, Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -24,10 +25,27 @@ const Navbar = () => {
     document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
   };
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+
+    // If we're on the homepage, just scroll to the section
+    if (location.pathname === "/") {
+      element?.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false);
+      return;
+    }
+
+    // If not on the homepage, navigate to the homepage first then scroll
+    // Use navigate from react-router and a short timeout to allow the DOM to mount
+    navigate("/");
     setIsOpen(false);
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      el?.scrollIntoView({ behavior: "smooth" });
+    }, 350);
   };
 
   return (
