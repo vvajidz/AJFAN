@@ -10,7 +10,12 @@ export default function FriesMenuPage() {
       <div className="min-h-screen bg-white flex flex-col justify-center items-center p-20">
 
         {/* Heading Section */}
-        <div className="text-center mb-8">
+        <div
+          className="text-center mb-8"
+          data-aos="fade-up"
+          data-aos-delay="600"      
+          data-aos-duration="1200"  
+        >
           <h1 className="text-4xl font-bold text-gray-900">Our Fries Menu</h1>
           <p className="text-gray-600 mt-2 text-lg">
             Crispy, golden, and loaded with flavor 🍟
@@ -21,6 +26,8 @@ export default function FriesMenuPage() {
         <img
           src="/friespc.jpg"
           alt="Fries Menu Desktop"
+          data-aos="zoom-in"
+          data-aos-duration="800"
           className="hidden md:block w-full max-w-6xl rounded-xl shadow-xl"
         />
 
@@ -28,6 +35,8 @@ export default function FriesMenuPage() {
         <img
           src="/friesphone.jpg"
           alt="Fries Menu Mobile"
+          data-aos="zoom-in"
+          data-aos-duration="800"
           className="block md:hidden w-full max-w-sm rounded-xl shadow-lg"
         />
       </div>
