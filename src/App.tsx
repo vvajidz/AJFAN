@@ -13,6 +13,10 @@ import AboutPage from "./pages/About";
 import WhoWeAre from "./pages/WhoWeAre";
 import ContactPage from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import PizzaMenuPage from "./pages/pizza";
+import BurgerMenuPage from "./pages/burger";
+import FriesMenuPage from "./pages/frieds";
+import KidsMealMenuPage from "./pages/kidsmeal";
 
 const queryClient = new QueryClient();
 
@@ -109,6 +113,11 @@ const App = () => (
             <Route path="/about" element={<AboutPage />} />
             <Route path="/who-we-are" element={<WhoWeAre />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/pizza" element={<PizzaMenuPage/>} />
+            <Route path="/burger" element={<BurgerMenuPage/>} />
+            <Route path="/fries" element={<FriesMenuPage/>} />
+            <Route path="/kidsmeal" element={<KidsMealMenuPage/>} />
+
             {/* ADD CUSTOM ROUTES ABOVE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

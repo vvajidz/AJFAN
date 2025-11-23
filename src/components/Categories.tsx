@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import type { KeyboardEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import broastImg from '@/assets/broast.jpg';
 import burgerImg from '@/assets/burger.jpg';
 import sandwichImg from '@/assets/sandwich.jpg';
@@ -9,23 +11,23 @@ import friesImg from '@/assets/fries.jpg';
 
 const Categories = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
-  const openMenuPdf = () => {
-    // public/menu.pdf is served at the root in Vite/React apps
-    window.open('/menu.pdf', '_blank');
+  const handleNavigate = (path: string) => {
+    navigate(path);
   };
 
-  const handleKeyDown = (e: KeyboardEvent) => {
-    if (e.key === 'Enter' || e.key === ' ') openMenuPdf();
+  const handleKeyDown = (e: KeyboardEvent, path: string) => {
+    if (e.key === 'Enter' || e.key === ' ') handleNavigate(path);
   };
 
   const categories = [
-    { name: t('categories.broast'), image: broastImg, count: '12 Items' },
-    { name: t('categories.burger'), image: burgerImg, count: '8 Items' },
-    { name: t('categories.sandwich'), image: sandwichImg, count: '15 Items' },
-    { name: t('categories.pizza'), image: heroPizza, count: '20 Items' },
-    { name: t('categories.kidsMeal'), image: kidsMealImg, count: '6 Items' },
-    { name: t('categories.fries'), image: friesImg, count: '5 Items' },
+    { name: t('categories.broast'), image: broastImg, count: '12 Items', path: '/fries' },
+    { name: t('categories.burger'), image: burgerImg, count: '8 Items', path: '/burger' },
+    { name: t('categories.sandwich'), image: sandwichImg, count: '15 Items', path: '/burger' },
+    { name: t('categories.pizza'), image: heroPizza, count: '20 Items', path: '/pizza' },
+    { name: t('categories.kidsMeal'), image: kidsMealImg, count: '6 Items', path: '/kidsmeal' },
+    { name: t('categories.fries'), image: friesImg, count: '5 Items', path: '/fries' },
   ];
 
   return (
@@ -49,8 +51,8 @@ const Categories = () => {
               className="group cursor-pointer"
               role="button"
               tabIndex={0}
-              onClick={openMenuPdf}
-              onKeyDown={handleKeyDown}
+              onClick={() => handleNavigate(category.path)}
+              onKeyDown={(e) => handleKeyDown(e, category.path)}
             >
               <div className="relative overflow-hidden rounded-2xl bg-card shadow-md hover:shadow-xl transition-all duration-300 hover-scale">
                 <div className="aspect-square">
