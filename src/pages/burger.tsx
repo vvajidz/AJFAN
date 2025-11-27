@@ -24,7 +24,7 @@ export default function BurgerMenuPage() {
 
         {/* Desktop Image */}
         <img
-          src="/burgerpc.jpg"
+          src="/burgpc.jpg"
           alt="Burger Menu Desktop"
           data-aos="zoom-in"
           data-aos-duration="800"
@@ -33,7 +33,7 @@ export default function BurgerMenuPage() {
 
         {/* Mobile Image */}
         <img
-          src="/burgerphone.jpg"
+          src="/burgphone.jpg"
           alt="Burger Menu Mobile"
           data-aos="zoom-in"
           data-aos-duration="800"

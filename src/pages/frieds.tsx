@@ -24,7 +24,7 @@ export default function FriesMenuPage() {
 
         {/* Desktop Image */}
         <img
-          src="/friespc.jpg"
+          src="/broastpc.jpg"
           alt="Fries Menu Desktop"
           data-aos="zoom-in"
           data-aos-duration="800"
@@ -33,7 +33,7 @@ export default function FriesMenuPage() {
 
         {/* Mobile Image */}
         <img
-          src="/friesphone.jpg"
+          src="/broastphone.jpg"
           alt="Fries Menu Mobile"
           data-aos="zoom-in"
           data-aos-duration="800"
