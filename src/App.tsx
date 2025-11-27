@@ -16,7 +16,6 @@ import NotFound from "./pages/NotFound";
 import PizzaMenuPage from "./pages/pizza";
 import BurgerMenuPage from "./pages/burger";
 import FriesMenuPage from "./pages/frieds";
-import KidsMealMenuPage from "./pages/kidsmeal";
 
 const queryClient = new QueryClient();
 
