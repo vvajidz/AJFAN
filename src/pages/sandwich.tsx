@@ -1,5 +1,5 @@
 import About from "@/components/About";
-import Contact from "@/components/Contact";
+import Contactlc from "@/components/lc";
 import Navbar from "@/components/Navbar";
 
 export default function SandwichMenuPage() {
@@ -41,7 +41,7 @@ export default function SandwichMenuPage() {
         />
       </div>
 
-      <Contact />
+      <Contactlc />
     </div>
   );
 }

@@ -1,5 +1,4 @@
-import About from "@/components/About";
-import Contact from "@/components/Contact";
+import Contactlc from "@/components/lc";
 import Navbar from "@/components/Navbar";
 
 export default function BurgerMenuPage() {
@@ -41,7 +40,7 @@ export default function BurgerMenuPage() {
         />
       </div>
 
-      <Contact />
+      <Contactlc />
     </div>
   );
 }

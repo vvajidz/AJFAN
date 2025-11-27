@@ -1,5 +1,5 @@
 import About from "@/components/About";
-import Contact from "@/components/Contact";
+import Contactlc from "@/components/lc";
 import Navbar from "@/components/Navbar";
 
 export default function PizzaMenuPage() {
@@ -44,7 +44,7 @@ export default function PizzaMenuPage() {
         
       </div>
 
-      <Contact />
+      <Contactlc />
     </div>
   );
 }

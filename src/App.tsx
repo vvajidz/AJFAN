@@ -12,6 +12,7 @@ import Index from "./pages/Index";
 import AboutPage from "./pages/About";
 import WhoWeAre from "./pages/WhoWeAre";
 import ContactPage from "./pages/Contact";
+import Contactlc from "./components/lc";
 import NotFound from "./pages/NotFound";
 import PizzaMenuPage from "./pages/pizza";
 import BurgerMenuPage from "./pages/burger";
@@ -113,6 +114,7 @@ const App = () => (
             <Route path="/about" element={<AboutPage />} />
             <Route path="/who-we-are" element={<WhoWeAre />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/lc" element={<Contactlc/>}/>
             <Route path="/pizza" element={<PizzaMenuPage/>} />
             <Route path="/burger" element={<BurgerMenuPage/>} />
             <Route path="/fries" element={<FriesMenuPage/>} />
