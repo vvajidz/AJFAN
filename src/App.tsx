@@ -16,6 +16,7 @@ import NotFound from "./pages/NotFound";
 import PizzaMenuPage from "./pages/pizza";
 import BurgerMenuPage from "./pages/burger";
 import FriesMenuPage from "./pages/frieds";
+import SandwichMenuPage from "./pages/sandwich";
 
 const queryClient = new QueryClient();
 
@@ -115,6 +116,8 @@ const App = () => (
             <Route path="/pizza" element={<PizzaMenuPage/>} />
             <Route path="/burger" element={<BurgerMenuPage/>} />
             <Route path="/fries" element={<FriesMenuPage/>} />
+            <Route path="/sandwitch" element={<SandwichMenuPage/>} />
+
 
             {/* ADD CUSTOM ROUTES ABOVE */}
             <Route path="*" element={<NotFound />} />

@@ -24,7 +24,7 @@ const Categories = () => {
   const categories = [
     { name: t('categories.broast'), image: broastImg, count: '12 Items', path: '/fries' },
     { name: t('categories.burger'), image: burgerImg, count: '8 Items', path: '/burger' },
-    { name: t('categories.sandwich'), image: sandwichImg, count: '15 Items', path: '/burger' },
+    { name: t('categories.sandwich'), image: sandwichImg, count: '15 Items', path: '/sandwich' },
     { name: t('categories.pizza'), image: heroPizza, count: '20 Items', path: '/pizza' },
     { name: t('categories.kidsMeal'), image: kidsMealImg, count: '6 Items', path: '/fries' },
     { name: t('categories.fries'), image: friesImg, count: '5 Items', path: '/fries' },
