@@ -118,7 +118,7 @@ const App = () => (
             <Route path="/pizza" element={<PizzaMenuPage/>} />
             <Route path="/burger" element={<BurgerMenuPage/>} />
             <Route path="/fries" element={<FriesMenuPage/>} />
-            <Route path="/sandwitch" element={<SandwichMenuPage/>} />
+            <Route path="/sandwich" element={<SandwichMenuPage/>} />
 
 
             {/* ADD CUSTOM ROUTES ABOVE */}
