@@ -35,9 +35,9 @@ const Menu = () => {
       viewAll: '/burger'
     },
     {
-      name: 'Broast',
-      nameAr: 'بروست',
-      category: 'Broast',
+      name: 'Fries',
+      nameAr: ' مقلية',
+      category: 'Fries',
       image: broastImg,
       path: '/fries',
       viewAll: '/fries'
