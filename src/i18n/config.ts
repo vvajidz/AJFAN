@@ -25,7 +25,7 @@ const resources = {
       categories: {
         title: "Popular Categories",
         subtitle: "Discover our favorites",
-        broast: "Broast",
+        special: "Special",
         burger: "Burger",
         sandwich: "Sandwich",
         pizza: "Pizza",
