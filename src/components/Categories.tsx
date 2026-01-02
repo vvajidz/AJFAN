@@ -8,6 +8,7 @@ import sandwichImg from '@/assets/sandwich.jpg';
 import heroPizza from '@/assets/hero-pizza.jpg';
 import kidsMealImg from '@/assets/kids-meal.jpg';
 import friesImg from '@/assets/fries.jpg';
+import nuggetsImg from '@/assets/nuggets.jpeg'
 
 const Categories = () => {
   const { t } = useTranslation();
@@ -22,7 +23,7 @@ const Categories = () => {
   };
 
   const categories = [
-    { name: t('categories.special'), image: broastImg, count: '12 Items', path: '/fries' },
+    { name: t('categories.special'), image: nuggetsImg, count: '12 Items', path: '/fries' },
     { name: t('categories.burger'), image: burgerImg, count: '8 Items', path: '/burger' },
     { name: t('categories.sandwich'), image: sandwichImg, count: '15 Items', path: '/sandwich' },
     { name: t('categories.pizza'), image: heroPizza, count: '20 Items', path: '/pizza' },
